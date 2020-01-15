@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Jung Han Lee"
-  avatar           : "/assets/images/bio.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio.jpg"
   bio              : "Data Science Portfolio."
   location         : "Michigan, MI"
   email            :
