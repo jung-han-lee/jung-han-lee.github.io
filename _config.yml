@@ -112,6 +112,7 @@ author:
   bio              : "Data Science Portfolio."
   location         : "Michigan, MI"
   email            :
+  linkedin         : "junghanlee"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
