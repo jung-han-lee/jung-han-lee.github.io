@@ -168,3 +168,6 @@ heatmap_digit(my_img; title="Network predicts $my_digit_prediction")
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/ml1/hand_result.png" alt="">
+
+
+> Network predicts 1. So our model successfully recognize it!
