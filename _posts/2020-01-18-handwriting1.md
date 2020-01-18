@@ -27,7 +27,7 @@ function load_digit_data(
     file1 = "data" * string(digits[2])
 
     x0 = open(file0, "r") do file
-        reshape(read(file), (nx, ny, nrep)) # what is the type of x0?
+        reshape(read(file), (nx, ny, nrep))
     end
 
     x1 = open(file1, "r") do file
