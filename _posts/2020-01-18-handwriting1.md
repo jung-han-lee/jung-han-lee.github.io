@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning with Julia: Handwritten digit recognition"
+title: "[Machine Learning with Julia] Handwritten digit recognition"
 date: 2020-01-18
 tags: [machine learning, data science, neural network, activation function, loss function]
 
