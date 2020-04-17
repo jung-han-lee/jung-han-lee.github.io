@@ -31,7 +31,7 @@ Here is a list of some of the variants you might encounter in this dataset:
 -2009; 2010
 ```
 
-And I made 4 classified cases"
+And I made 4 classified cases:
 
 ```
 case1 : 04/20/2009; 04/20/09; 4/20/09; 4/3/09; Mar-20-2009
@@ -55,9 +55,10 @@ Once you have extracted these date patterns from the text, the next step is to s
 -If the month is missing (e.g. 2010), assume it is the first of January of that year (e.g. January 1, 2010).
 
 -Watch out for potential typos as this is a raw, real-life derived dataset.
+```
 
 With these rules in mind, find the correct date in each note and return a pandas Series in chronological order of the original Series' indices.
-```
+
 
 
 ```python
@@ -82,24 +83,28 @@ import re
 ```
 
 ```python
+#case 1
 df.str.findall(r'\d{1,2}[-/]\d{1,2}[-/]\d{2,4}').head()
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s2.png" alt="">
 
 ```python
+#case2
 df.str.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*.? (?:\d{1,2}[a-z]*, |\d{1,2}[a-z]* )?\d{4}')[300:305]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s3.png" alt="">
 
 ```python
+#case3
 df.str.findall(r'\d{1,2}[-/][1|2]\d{3}')[400:405]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s4.png" alt="">
 
 ```python
+#case4
 df.str.findall(r'[1|2]\d{3}')[495:500]
 ```
 
@@ -107,6 +112,7 @@ df.str.findall(r'[1|2]\d{3}')[495:500]
 
 
 ```python
+#case 4 to compare the results to case3
 df.str.findall(r'[1|2]\d{3}')[400:405]
 ```
 
