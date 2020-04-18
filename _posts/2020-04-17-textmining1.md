@@ -26,17 +26,16 @@ Here is a list of some of the variants I might encounter in this dataset:
 
 Once I have extracted these date patterns from the text, I need to sort them in ascending chronological order according to the following rules:
 
-```
--Assume all dates in xx/xx/xx format are mm/dd/yy
+* Assume all dates in xx/xx/xx format are mm/dd/yy
 
--Assume all dates where year is encoded in only two digits are years from the 1900's (e.g. 1/5/89 is January 5th, 1989)
+* Assume all dates where year is encoded in only two digits are years from the 1900's (e.g. 1/5/89 is January 5th, 1989)
 
--If the day is missing (e.g. 9/2009), assume it is the first day of the month (e.g. September 1, 2009).
+* If the day is missing (e.g. 9/2009), assume it is the first day of the month (e.g. September 1, 2009).
 
--If the month is missing (e.g. 2010), assume it is the first of January of that year (e.g. January 1, 2010).
+* If the month is missing (e.g. 2010), assume it is the first of January of that year (e.g. January 1, 2010).
 
--Watch out for potential typos as this is a raw, real-life derived dataset.
-```
+* Watch out for potential typos as this is a raw, real-life derived dataset.
+
 
 **With these rules in mind, find the correct date in each note and return a pandas Series in chronological order of the original Series' indices.**
 
