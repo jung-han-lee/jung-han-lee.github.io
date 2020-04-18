@@ -7,7 +7,7 @@ excerpt: "Machine Learning, Text Mining, Data Science"
 mathjax: "true"
 ---
 
-# Working with Text in Python
+# Working with Text in Python(Regular Expression)
 
 Each line of the dates.txt file corresponds to a medical note. Each note has a date that needs to be extracted, but each date is encoded in one of many formats.
 
@@ -118,7 +118,7 @@ df.str.findall(r'[1|2]\d{3}')[400:405]
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s5.png" alt="">
 
-However as we can find from above, in some texts, the results from regex3 and regex4 are different. To avoid this situation, I applied case1 to all texts, and then did case2, case3, case4 sequentially.
+However as we can find from above, in some texts, the results from case3 and case4 are different. To avoid this situation, I applied case1 to all texts, and then did case2, case3, case4 sequentially.
 
 Therefore, my answer is as follows:
 ```python
