@@ -13,7 +13,7 @@ Each line of the dates.txt file corresponds to a medical note. Each note has a d
 
 The goal of this assignment is to correctly identify all of the different date variants encoded in this dataset and to properly normalize and sort the dates.
 
-Here is a list of some of the variants you might encounter in this dataset:
+Here is a list of some of the variants I might encounter in this dataset:
 
 
 * 04/20/2009; 04/20/09; 4/20/09; 4/3/09
@@ -24,7 +24,7 @@ Here is a list of some of the variants you might encounter in this dataset:
 * 6/2008; 12/2009
 * 2009; 2010
 
-Once you have extracted these date patterns from the text, the next step is to sort them in ascending chronological order according to the following rules:
+Once I have extracted these date patterns from the text, I need to sort them in ascending chronological order according to the following rules:
 
 ```
 -Assume all dates in xx/xx/xx format are mm/dd/yy
@@ -38,7 +38,7 @@ Once you have extracted these date patterns from the text, the next step is to s
 -Watch out for potential typos as this is a raw, real-life derived dataset.
 ```
 
-With these rules in mind, find the correct date in each note and return a pandas Series in chronological order of the original Series' indices.
+**With these rules in mind, find the correct date in each note and return a pandas Series in chronological order of the original Series' indices.**
 
 
 Based on the list of the variants, I made 4 classified cases:
