@@ -49,7 +49,7 @@ Based on the list of the variants, I made 4 classified cases:
 
 
 ```python
-#call the text file convert it into Series
+#Call the text file and convert it into Series
 import pandas as pd
 
 doc = []
@@ -100,13 +100,13 @@ df.str.findall(r'[1|2]\d{3}')[495:500]
 
 
 ```python
-#Texts in the series from index 400 to index 405 have different values when I applied case3 regex and case4 regex 
+#Texts in the series from index 400 to index 405 have different values when I applied case3 regex and case4 regex
 df.str.findall(r'[1|2]\d{3}')[400:405]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s5.png" alt="">
 
-However as we can find from above, in some texts, the results from case3 code and case4 code are different. To avoid this situation, I applied case1 to all texts, and then did case2 to the rest of texts, case3, case4 sequentially.
+However as we can find from the above results, in some texts, the results from case3 code and case4 code are different. To avoid this situation, I applied case1 to all texts, and then did case2 to the rest of texts, case3, case4 sequentially.
 
 Therefore, my answer is as follows:
 ```python
@@ -126,3 +126,9 @@ def date_sorter():
 
     return pd.Series(date)
 ```
+And sorted date from my model is as follows:
+
+```python
+date_sorter()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/tm/result.png" alt="">
