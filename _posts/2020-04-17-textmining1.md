@@ -15,25 +15,25 @@ The goal of this assignment is to correctly identify all of the different date v
 
 Here is a list of some of the variants you might encounter in this dataset:
 
-```
--04/20/2009; 04/20/09; 4/20/09; 4/3/09
 
--Mar-20-2009; Mar 20, 2009; March 20, 2009; Mar. 20, 2009; Mar 20 2009;
+>-04/20/2009; 04/20/09; 4/20/09; 4/3/09
 
--20 Mar 2009; 20 March 2009; 20 Mar. 2009; 20 March, 2009
+>-Mar-20-2009; Mar 20, 2009; March 20, 2009; Mar. 20, 2009; Mar 20 2009;
 
--Mar 20th, 2009; Mar 21st, 2009; Mar 22nd, 2009
+>-20 Mar 2009; 20 March 2009; 20 Mar. 2009; 20 March, 2009
 
--Feb 2009; Sep 2009; Oct 2010
+>-Mar 20th, 2009; Mar 21st, 2009; Mar 22nd, 2009
 
--6/2008; 12/2009
+>-Feb 2009; Sep 2009; Oct 2010
 
--2009; 2010
-```
+>-6/2008; 12/2009
+
+>-2009; 2010
+
 
 Based on the list, I made 4 classified cases:
 
-```
+
 case1 : 04/20/2009; 04/20/09; 4/20/09; 4/3/09; Mar-20-2009
 
 case2 : Mar 20, 2009; March 20, 2009; Mar. 20, 2009; Mar 20 2009; 20 Mar 2009; 20 March 2009; 20 Mar. 2009; 20 March, 2009; Mar 20th, 2009; Mar 21st, 2009; Mar 22nd, 2009; Feb 2009; Sep 2009; Oct 2010
@@ -41,7 +41,7 @@ case2 : Mar 20, 2009; March 20, 2009; Mar. 20, 2009; Mar 20 2009; 20 Mar 2009; 2
 case3 : 6/2008; 12/2009
 
 case4 : 2009; 2010
-```
+
 
 Once you have extracted these date patterns from the text, the next step is to sort them in ascending chronological order according to the following rules:
 
