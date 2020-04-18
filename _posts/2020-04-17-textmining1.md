@@ -100,13 +100,13 @@ df.str.findall(r'[1|2]\d{3}')[495:500]
 
 
 ```python
-#case 4 to compare the results to case3
+#case 4 to compare the results to those of case3
 df.str.findall(r'[1|2]\d{3}')[400:405]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s5.png" alt="">
 
-However as we can find from above, in some texts, the results from case3 and case4 are different. To avoid this situation, I applied case1 to all texts, and then did case2, case3, case4 sequentially.
+However as we can find from above, in some texts, the results from case3 code and case4 code are different. To avoid this situation, I applied case1 to all texts, and then did case2 to the rest of texts, case3, case4 sequentially.
 
 Therefore, my answer is as follows:
 ```python
