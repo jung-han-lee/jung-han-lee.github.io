@@ -31,7 +31,7 @@ Here is a list of some of the variants you might encounter in this dataset:
 -2009; 2010
 ```
 
-And I made 4 classified cases:
+Based on the list, I made 4 classified cases:
 
 ```
 case1 : 04/20/2009; 04/20/09; 4/20/09; 4/3/09; Mar-20-2009
@@ -118,7 +118,7 @@ df.str.findall(r'[1|2]\d{3}')[400:405]
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s5.png" alt="">
 
-However we can find that in some texts, the results from regex3 and regex4 are same.
+However as we can find from above, in some texts, the results from regex3 and regex4 are different. To avoid this situation, I applied case1 to all texts, and then did case2, case3, case4 sequentially.
 
 Therefore, my answer is as follows:
 ```python
