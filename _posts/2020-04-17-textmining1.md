@@ -49,6 +49,7 @@ Based on the list of the variants, I made 4 classified cases:
 
 
 ```python
+#call the text file convert it into Series
 import pandas as pd
 
 doc = []
@@ -70,28 +71,28 @@ import re
 ```
 
 ```python
-#case 1
+#Find case 1 from the series
 df.str.findall(r'\d{1,2}[-/]\d{1,2}[-/]\d{2,4}').head()
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s2.png" alt="">
 
 ```python
-#case2
+#Find case2
 df.str.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*.? (?:\d{1,2}[a-z]*, |\d{1,2}[a-z]* )?\d{4}')[300:305]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s3.png" alt="">
 
 ```python
-#case3
+#Find case3
 df.str.findall(r'\d{1,2}[-/][1|2]\d{3}')[400:405]
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/tm/s4.png" alt="">
 
 ```python
-#case4
+#Find case4
 df.str.findall(r'[1|2]\d{3}')[495:500]
 ```
 
@@ -99,7 +100,7 @@ df.str.findall(r'[1|2]\d{3}')[495:500]
 
 
 ```python
-#case 4 to compare the results to those of case3
+#Texts in the series from index 400 to index 405 have different values when I applied case3 regex and case4 regex 
 df.str.findall(r'[1|2]\d{3}')[400:405]
 ```
 
