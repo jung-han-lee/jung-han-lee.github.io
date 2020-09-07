@@ -5,4 +5,4 @@ header:
   image: "/images/sf.png"
 ---
 
-I'm a master candidate who is interested in data science, machine learning, exploratory analysis, and data visualization.
+I'm a dat scientist who is interested in data science, machine learning, deep learning, and cloud computing.
